@@ -33,6 +33,7 @@ Pada gambar diatas, kernel yang digunakan adalah versi 4.15.0-204-generic.
 # Identifikasi Direktori Root Pada Linux
 
 ![dir.jpg](blob/dir.png)
+
 Pada linux, terdapat beberapa folder pada folder `/` atau `root`. Folder dan fungsi dari folder tersebut adalah:
 
 1. `/bin` - aplikasi-aplikasi biner penting
