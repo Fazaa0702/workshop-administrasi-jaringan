@@ -63,7 +63,16 @@ set servers=202.9.85.3
 
 ### Internet Client
 
-Untuk _config client_, config yang diterapkan hanya DHCP server karena _client_ hanya tinggal IP nya saja
+Untuk _config client_, config yang diterapkan hanya DHCP server karena _client_ hanya tinggal IP nya saja menggunakan perintah
+
+```console
+/ip pool
+add name=dhcp_pool0 ranges=192.168.5.2-192.168.5.254
+/ip dhcp-server network
+add address=192.168.5.0/24 gateway=192.168.5.1
+/ip dhcp-server
+add address-pool=dhcp_pool0 disabled=no interface=ether2 name=dhcp1
+```
 
 <br><br>
 
